@@ -62,13 +62,15 @@ The application will start on port `8080` by default.
 
 ---
 ## Users
+
 **Admin**:
-**Username**:`admin`
-**PassWord**:`admin123`
+- **Username**: `admin`
+- **Password**: `admin123`
 
 **User**:
-**Username**:`user`
-**PassWord**:`user123`
+- **Username**: `user`
+- **Password**: `user123`
+
 ---
 ## API Endpoints
 
