@@ -146,7 +146,7 @@ The application will start on port `8080` by default.
 ]
 ```
 
-### 3. **Get Book by ISBN**
+### 3. **Get Book by title**
 
 - **URL**: `/books/{title}`
 - **Method**: `GET`
@@ -214,10 +214,10 @@ The application will start on port `8080` by default.
 
 ### 5. **Delete a Book**
 
-- **URL**: `/books/delete/{isbn}`
+- **URL**: `/books/delete/{title}`
 - **Method**: `DELETE`
 - ***Role**: Admin
-- **Parameters**: `isbn` (Path parameter)
+- **Parameters**: `title` (Path parameter)
 - **Response**:
 
 ```bash
