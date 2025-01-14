@@ -247,4 +247,4 @@ The API will return the following error responses in case of invalid input:
 
 ## Conclusion
 
-This API allows you to create, read, update, and delete books and authors while ensuring that authors are not duplicated. The system uses a `Many-to-Many` relationship between books and authors, so authors can be linked to multiple books.
+This API allows you to create, read, update, and delete books and authors while ensuring that authors are not duplicated. The system uses a `One-to-Many` relationship between books and authors, so authors can be linked to multiple books.
