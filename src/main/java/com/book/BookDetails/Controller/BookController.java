@@ -2,6 +2,7 @@ package com.book.BookDetails.Controller;
 
 import com.book.BookDetails.Services.BookService;
 import com.book.BookDetails.Units.BookUnits;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +20,7 @@ public class BookController {
 
     // Add a new book
     @PostMapping
-    public ResponseEntity<String> addBook(@RequestBody BookUnits book) {
+    public ResponseEntity<String> addBook(@Valid @RequestBody BookUnits book) {
         try {
             bookService.Add(book);
             return new ResponseEntity<>("Book added successfully.", HttpStatus.CREATED);
