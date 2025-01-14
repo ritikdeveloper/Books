@@ -12,13 +12,16 @@ import java.util.List;
 public class BookUnits {
 
     @Id
+
     private String isbn;
     private String title;
     private int year;
     private double price;
     private String genre;
 
-    private String authors;
+    @OneToMany(cascade = CascadeType.ALL)
+    @JoinColumn(name = "book_id")
+    private List<AuthorUnits> authors;
 
     public String getIsbn() {
         return isbn;
@@ -60,11 +63,11 @@ public class BookUnits {
         this.genre = genre;
     }
 
-    public String getAuthors() {
+    public List<AuthorUnits> getAuthors() {
         return authors;
     }
 
-    public void setAuthors(String authors) {
+    public void setAuthors(List<AuthorUnits> authors) {
         this.authors = authors;
     }
 }

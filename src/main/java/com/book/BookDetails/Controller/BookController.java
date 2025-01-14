@@ -49,8 +49,6 @@ public class BookController {
         }
     }
 
-
-    // Find a book by title
     @GetMapping("/{title}")
     public ResponseEntity<BookUnits> getBookByTitle(@PathVariable String title) {
         BookUnits book = bookService.findByTitle(title);
@@ -61,7 +59,6 @@ public class BookController {
         }
     }
 
-    // Delete a book by title
     @DeleteMapping("/{title}")
     public ResponseEntity<String> deleteBook(@PathVariable String title) {
         try {
