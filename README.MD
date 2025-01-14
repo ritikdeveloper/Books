@@ -66,7 +66,7 @@ The application will start on port `8080` by default.
 **Username**:`admin`
 **PassWord**:`admin123`
 
-**Admin**:
+**User**:
 **Username**:`user`
 **PassWord**:`user123`
 ---
